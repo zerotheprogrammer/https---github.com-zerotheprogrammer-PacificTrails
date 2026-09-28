@@ -11,60 +11,58 @@
 
 <body>
     <div class="site-wrapper">
-        <header class="site-heaeder">
+        <header class="site-header">
+            <a class="logo-card" href="index.html" aria-label="Asia Webb, home">
+                <span class="logo-mark">AW</span>
+                <span>
+                    <strong>Asia Webb</strong>
+                    <small>Web Developer Portfolio</small>
+                </span>
+            </a>
 
-        </header>
-        <a class="logo-card" ref="index.html" aria-label="Asia Webb, home">
-            <span class="logo-mark">AW</span>
-            <span>
-                <strong>Asia Webb</strong>
-                <small>Web Developer Portfolio</small>
-            </span>
-        </a>
-        <nav aria-label="Main navigation">
-            <!-- Creating the navigation that will be _________ of each page -->
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-        </nav>
+            <nav aria-label="Main navigation">
+                <!-- Navigation appears at the top of each page. -->
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </header>
 
         <main>
             <section class="hero">
-                <div class=""hero-text>
+                <div class="hero-text">
                     <h1>Hello, I'm Asia Webb</h1>
-                    <p>Aspiring web developer and programmer</p>
+                    <p>Aspiring web developer and programmer.</p>
                     <p>
-                        I turn ideas into clear, useful wbsites 
+                        I turn ideas into clear, useful websites
                         and programs.
                     </p>
                     <a class="button" href="projects.html">View my projects</a>
                 </div>
 
-            <div class="portrait placeholder">
-                <img src="images/portrait.jpg" alt="A picture of Asia(person)">
-            
-            </div>
+                <div class="portrait-placeholder">
+                    <img src="images/portrait.jpg" alt="Portrait of Asia Webb">
+                </div>
             </section>
 
-            <section class="skills" aria-labelledby="skills-heading".>
-                <h2 id=""skills-heading>What I bring</h2>
+            <section class="skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">What I bring</h2>
 
                 <div class="skill-grid">
                     <article class="skill-card">
                         <h3>HTML &amp; CSS</h3>
-                        <p>Buildging organized pages that work across screen sizes</p>
+                        <p>Building organized pages that work across screen sizes.</p>
                     </article>
 
                     <article class="skill-card">
                         <h3>Java</h3>
-                        <p>Practicing programming through course projects</p>
+                        <p>Practicing programming through course projects.</p>
                     </article>
 
-                    <article>
+                    <article class="skill-card">
                         <h3>Problem Solving</h3>
-                        <p>Breaking a challenge into manageable steps</p>
+                        <p>Breaking a challenge into manageable steps.</p>
                     </article>
                 </div>
             </section>
@@ -74,7 +72,9 @@
             <p>&copy; 2026 Asia Webb</p>
             <p>
                 <a href="mailto:awebb10@my.westga.edu">Email</a>
-                <a href="https://github.com/zerotheprogrammer" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="https://github.com/zerotheprogrammer"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
             </p>
         </footer>
     </div>

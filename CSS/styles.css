@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color:#ffcbc4;
+    color: #f6f3f2;
+    line-height: 1.5;
+}
+
+.site-wrapper {
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #262425;
+}
+
+.site-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo-card {
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color:#aca5a5;
+    color: #242223;
+    text-decoration: none;
+}
+
+.logo-mark {
+    display: grid;
+    width: 3.5rem;
+    height: 3.5rem;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #262425;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.logo-card strong, 
+.logo-card small {
+    display:block;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1.5rem
+}
+
+nav a,
+footer a {
+    color: #ffffff;
+    font-weight:bold;
+    text-decoration: none
+}
+
+nav a:hover,
+footer a:hover,
+nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 3px solid #ffcbc4;
+    outline-offset: 4px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+    padding: 2rem;
+    background-color: #3a3738;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.button {
+ display: inline-block;
+ margin-top: 1rem;
+ padding: 0.8rem 1.2rem;
+ background-color: #ffcbc4;
+ color: #242223;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.button:hover {
+    background-color: #ffffff;
+}
+
+.portrait-placeholder img {
+    display: grid;
+    min-height: 220px;
+    padding: 1rem;
+    place-items: center;
+    border: 2px dashed #aaa4a4;
+    text-align: center;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.skill-card {
+    padding: 1.5rem;
+    background-color: #3a3738;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid #777172;
+}
+
+footer p {
+    margin: 0
+}
+
+footer a + a {
+    margin-left: 1rem;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0.75rem;
+    }
+
+    .site-wrapper {
+        padding: 1.25rem;
+    }
+
+    .site-header,
+    footer {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-top: 0;
+    }
+
+    .hero,
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        margin: 2rem 0;
+        padding: 1.25rem;
+    }
+}
