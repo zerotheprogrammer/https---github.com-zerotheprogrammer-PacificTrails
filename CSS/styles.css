@@ -8,6 +8,7 @@ body {
     background-color:#ffcbc4;
     color: #f6f3f2;
     line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .site-wrapper {
@@ -55,14 +56,14 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-top: 1.5rem
+    padding-top: 1.5rem;
 }
 
 nav a,
 footer a {
     color: #ffffff;
     font-weight:bold;
-    text-decoration: none
+    text-decoration: none;
 }
 
 nav a:hover,
@@ -106,13 +107,19 @@ h1 {
     background-color: #ffffff;
 }
 
-.portrait-placeholder img {
+.portrait-placeholder {
     display: grid;
     min-height: 220px;
     padding: 1rem;
     place-items: center;
     border: 2px dashed #aaa4a4;
     text-align: center;
+}
+
+.portrait-placeholder img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .skill-grid {
@@ -140,7 +147,7 @@ footer {
 }
 
 footer p {
-    margin: 0
+    margin: 0;
 }
 
 footer a + a {
