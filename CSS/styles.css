@@ -193,6 +193,73 @@ footer a + a {
     gap: 1rem;
 }
 
+.projects-intro {
+    margin-top: 4rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    background-color: #3a3738;
+}
+
+.project-card h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.project-skills {
+    margin-top: 3rem;
+}
+
+.project-skills a {
+    color: #ffcbc4;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table-wrapper:focus-visible {
+    outline: 3px solid #ffcbc4;
+    outline-offset: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 1rem 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 1rem;
+    border: 1px solid #aaa4a4;
+    text-align: left;
+}
+
+thead {
+    background-color: #3a3738;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #3a3738;
+}
+
+.about-details {
+    margin-top: 3rem;
+}
 @media (min-width: 701px) and (max-width: 1000px) {
     .site-header {
         flex-direction: column;
@@ -212,6 +279,10 @@ footer a + a {
 
     .detail-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     }
 
@@ -250,5 +321,18 @@ footer a + a {
     .about-grid,
     .detail-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-intro {
+        margin-top: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    th,
+    td{
+        padding: 0.75rem;
     }
 }
