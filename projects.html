@@ -1,25 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asia Webb's web develpoment and programming portfolio.">
+    <meta name="description" content="Asia Webb's web development and programming portfolio.">
     <title>Projects | Asia Webb</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-     <header>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <a class="logo-card" href="index.html" aria-label="Asia Webb, home">
+                <span class="logo-mark">AW</span>
+                <span>
+                    <strong>Asia Webb</strong>
+                    <small>Web Developer Portfolio</small>
+                </span>
+            </a>
 
-    </header>
-     <nav>
-        <!-- Creating the navigation that will be _________ of each page -->
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-    </nav>
+        <main>
+            <section class="projects-intro" aria-labelledby="projects-heading">
+                <h1 id="projects-heading">My Projects</h1>
+                <p>
+                    These course projects display what I am learning in web
+                    development and Java programming.
+                </p>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h2>Oshun Yoga Studio</h2>
+                        <p>
+                            A website featuring information about a yoga
+                            studio, its classes, and mythology.
+                        </p>
+                        <p><strong>Skills:</strong> HTML and CSS</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h2>Ellipse Project</h2>
+                        <p>
+                            A Java program that calculates properties
+                            of an ellipse using its center and radii.
+                        </p>
+                        <p><strong>Skills: </strong> Java and Mathematics</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h2>Pacific Trails Resort</h2>
+                        <p>
+                            A course case study featuring resort information,
+                            a package table, and a reservation form.
+                        </p>
+                        <p><strong> Skills:</strong> Responsive design and forms</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="project-skills" aria-labelledby="table-heading">
+                <h2 id="table-heading">Skills and Tools</h2>
+
+                <div class="table-wrapper" role="region" aria-labelledby="table-heading" tabindex="0">
+                    <table>
+                        <caption>Skills practiced through my projects</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Skill or Tool</th>
+                                <th scope="col">Purpose</th>
+                                <th scope="col">Project Example</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">HTML</th>
+                                <td>Organizing website content</td>
+                                <td>Oshun Yoga Studio</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">CSS</th>
+                                <td>Styling pages for different screen sizes</td>
+                                <td>Pacific Trails Resort</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Java</th>
+                                <td>Performing calculations using classes</td>
+                                <td>Ellipse Project</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Git</th>
+                                <td>Recording changes during development stages</td>
+                                <td>Personal Portfolio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    Explore my work on
+                    <a href="https://github.com/zerotheprogrammer">
+                        my Github profile
+                    </a>
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Asia Webb</p>
+            <p>
+                <a href="mailto:awebb10@my.westga.edu">Email</a>
+                <a href="https://github.com/zerotheprogrammer" target="_blank" rel="noopener noreferrer">Github</a>
+            </p>
+        </footer>
+    </div>
 </body>
+
 </html>

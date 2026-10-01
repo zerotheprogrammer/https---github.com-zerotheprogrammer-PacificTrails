@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,79 @@
     <title>Contact | Asia Webb</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-     <header>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <a class="logo-card" href="index.html" aria-label="Asia Webb, home">
+                <span class="logo-mark">AW</span>
+                <span>
+                    <strong>Asia Webb</strong>
+                    <small>Web Developer Portfolio</small>
+                </span>
+            </a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+        </header>
 
-    </header>
-     <nav>
-        <!-- Creating the navigation that will be _________ of each page -->
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
+        <main>
+            <section class="contact-intro" aria-labelledby="contact-heading">
+                <h1 id="contact-heading">Let's Connect</h1>
+                <p>
+                    I invite questions about my projects and
+                    opportunities to continue learning.
+                </p>
+                <p>
+                    Email me at
+                    <a href="mailto:awebb10@my.westga.edu">
+                        awebb10@my.westga.edu
+                    </a>
+                </p>
+                <p>
+                    Explore my work on
+                    <a href="https://github.com/zerotheprogrammer">
+                        my GitHub profile
+                    </a>
+                </p>
+            </section>
 
-    </nav>
+            <section class="contact-section" aria-labelledby="form-heading">
+                <h2 id="form-heading">Contact Form</h2>
+                <p id="form-instructions">
+                    Required fields are marked with an asterisk (*).
+                </p>
+
+                <form class="contact-form" method="post" action="https://formsubmit.co/awebb10@my.westga.edu"
+                    aria-describedby="form-instructions">
+
+                    <label for="myName">* Name:</label>
+                    <input type="text" id="myName" name="myName" autocomplete="name" required>
+
+                    <label for="myEmail">* Email:</label>
+                    <input type="email" id="myEmail" name="email" autocomplete="email" required>
+
+                    <label for="myMessage">* Message</label>
+                    <textarea id="myMessage" name="myMessage" rows="6" required></textarea>
+
+                    <button class="button" type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Asia Webb</p>
+            <p>
+                <a href="mailto:awebb10@my.westga.edu">Email</a>
+                <a href="https://github.com/zerotheprogrammer" target="_blank" rel="noopener noreferrer">Github</a>
+            </p>
+        </footer>
+    </div>
 </body>
+
 </html>
