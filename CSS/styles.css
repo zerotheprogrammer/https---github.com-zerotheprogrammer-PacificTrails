@@ -260,6 +260,63 @@ tbody tr:nth-of-type(even) {
 .about-details {
     margin-top: 3rem;
 }
+
+.contact-intro {
+    margin-top: 4rem;
+}
+
+.contact-intro a {
+    color: #ffcbc4;
+    overflow-wrap: anywhere;
+}
+
+.contact-section {
+    margin-top: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    width: 100%;
+    max-width: 40rem;
+    padding: 1.5rem;
+    background-color: #3a3738;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid #aaa4a4;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #242223;
+    font: inherit;
+}
+
+.contact-form textarea{
+    resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible {
+    outline: 3px solid #ffcbc4;
+    outline-offset: 4px;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
 @media (min-width: 701px) and (max-width: 1000px) {
     .site-header {
         flex-direction: column;
@@ -334,5 +391,13 @@ tbody tr:nth-of-type(even) {
     th,
     td{
         padding: 0.75rem;
+    }
+
+    .contact-intro {
+        margin-top: 2rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
     }
 }
