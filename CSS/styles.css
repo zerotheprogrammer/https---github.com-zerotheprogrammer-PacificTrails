@@ -317,6 +317,15 @@ tbody tr:nth-of-type(even) {
     font-weight: bold;
     cursor: pointer;
 }
+
+.project-card h2 a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.project-card h2 a {
+    color: #ffcbc4;
+}
 @media (min-width: 701px) and (max-width: 1000px) {
     .site-header {
         flex-direction: column;
